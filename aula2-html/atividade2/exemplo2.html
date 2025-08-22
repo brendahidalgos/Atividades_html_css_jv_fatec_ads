@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <form action="acao.php" method="post">
+        <div>
+            <label for="texto">Digite um texto: </label>
+            <input type="text"  class="input_for" name="texto" id="idtexto" pattern="[0-49AT]{2} [ERT]{3}" required placeholder="">
+        </div>
+        <div>
+            <label for="texto">Digite um texto: </label>
+            <input type="text"  class="input_for" name="texto" id="idtexto" pattern="[CBA]{1,2} [872]{0,1}" required>
+        </div>
+        <!--
+        \d é o mesmo que [0-9] de zero a nove
+        ? é o mesmo que {0,1} de zero a um
+        * é o mesmo que {0,} minimo zero, máximo...
+        + é o mesmo que {1,} minimo um, máximo...
+
+        \d[a-d]*        
+        -->
+        <div class="botoes">
+            <input type="reset" class="bt_limpar" value="Limpar">
+            <input type="submit" class="bt_enviar" value="Enviar">
+        </div>
+    </form>    
+</body>
+</html>
