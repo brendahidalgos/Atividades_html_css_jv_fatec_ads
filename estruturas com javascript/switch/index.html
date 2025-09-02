@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo switch JS</title>
+</head>
+<body>
+    <h1>Escolha uma Fruta</h1>
+    <select id="fruta">
+        <option value="banana">Banana</option>
+        <option value="maca">Maçã</option>
+        <option value="laranja">Laranja</option>
+    </select>
+    <button onclick="escolherFruta()">Escolher</button>
+    <p id="resultado"></p>
+
+    <script>
+        function escolherFruta() {
+            let fruta = document.getElementById("fruta").value;
+            let resultado = document.getElementById("resultado");
+
+            switch (fruta) {
+                case "banana":
+                    resultado.textContent = "Você escolheu uma Banana!";
+                    break;
+                case "maca":
+                    resultado.textContent = "Você escolheu uma Maçã!";
+                    break;
+                case "laranja":
+                    resultado.textContent = "Você escolheu uma Laranja!";
+                    break;
+                default:
+                    resultado.textContent = "Fruta desconhecida.";
+            }
+        }
+    </script>
+</body>
+</html>

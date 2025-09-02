@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo for JS</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <label for="numero">Número:</label>
+    <input type="number" id="numero">
+    <button onclick="calcularTabuada()">Calcular</button>
+    <div id="resultado"></div>
+
+    <script>
+        function calcularTabuada() {
+            let numero = document.getElementById("numero").value;
+            let resultado = document.getElementById("resultado");
+            resultado.innerHTML = ""; // Limpa o resultado anterior
+
+            for (let i = 1; i <= 10; i++) {
+                let linha = document.createElement("p");
+                linha.textContent = `${numero} x ${i} = ${numero * i}`;
+                resultado.appendChild(linha);
+            }
+        }
+    </script>
+</body>
+</html>

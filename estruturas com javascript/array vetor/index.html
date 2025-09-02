@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo Vetor JS</title>
+</head>
+<body>
+    <h1>Nomes</h1>
+    <input type="text" id="nome1" placeholder="Nome 1"><br>
+    <input type="text" id="nome2" placeholder="Nome 2"><br>
+    <input type="text" id="nome3" placeholder="Nome 3"><br>
+    <button onclick="exibirNomes()">Exibir Nomes</button>
+    <p id="resultado"></p>
+
+    <script>
+        function exibirNomes() {
+            let nomes = [
+                document.getElementById("nome1").value,
+                document.getElementById("nome2").value,
+                document.getElementById("nome3").value
+            ];
+            let resultado = document.getElementById("resultado");
+            resultado.textContent = "Nomes inseridos: " + nomes.join(", ");
+        }
+    </script>
+</body>
+</html>

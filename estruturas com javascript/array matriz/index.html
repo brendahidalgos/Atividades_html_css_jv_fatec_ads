@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo Matriz JS</title>
+</head>
+<body>
+    <h1>Notas de Alunos</h1>
+    <label>Aluno 1:</label> <input type="text" id="aluno1"><label>Nota 1:</label> <input type="number" step="0.1" id="nota1"><br>
+    <label>Aluno 2:</label> <input type="text" id="aluno2"><label>Nota 2:</label> <input type="number" step="0.1" id="nota2"><br>
+    <button onclick="exibirNotas()">Exibir Notas</button>
+    <div id="resultado"></div>
+
+    <script>
+        function exibirNotas() {
+            let notasAlunos = [
+                [document.getElementById("aluno1").value, document.getElementById("nota1").value],
+                [document.getElementById("aluno2").value, document.getElementById("nota2").value]
+            ];
+            let resultado = document.getElementById("resultado");
+            resultado.innerHTML = "";
+
+            for (let i = 0; i < notasAlunos.length; i++) {
+                let linha = document.createElement("p");
+                linha.textContent = `O(a) aluno(a) ${notasAlunos[i][0]} tirou a nota ${notasAlunos[i][1]}.`;
+                resultado.appendChild(linha);
+            }
+        }
+    </script>
+</body>
+</html>

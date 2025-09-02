@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo do-while JS</title>
+</head>
+<body>
+    <h1>Verificar Senha</h1>
+    <label for="senha">Senha (dica: 'js'):</label>
+    <input type="password" id="senha">
+    <button onclick="verificarSenha()">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarSenha() {
+            let senhaInput = document.getElementById("senha");
+            let resultado = document.getElementById("resultado");
+            let tentativa;
+
+            do {
+                tentativa = senhaInput.value;
+                if (tentativa === "js") {
+                    resultado.textContent = "Senha correta! Acesso permitido.";
+                    break;
+                } else {
+                    resultado.textContent = "Senha incorreta. Tente novamente.";
+                    senhaInput.value = "";
+                    return; // Sai da função após a primeira tentativa incorreta
+                }
+            } while (tentativa !== "js");
+        }
+    </script>
+</body>
+</html>
