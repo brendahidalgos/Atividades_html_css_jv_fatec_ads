@@ -1,0 +1,245 @@
+﻿<!--Comentários - ignorados pelo interpretador HTML-->
+
+<!--Diretiva que informa ao navegador que o documento é em HTML5-->
+<!DOCTYPE html>
+
+<!--Tag HTML contém todo o conteúdo do documento (raiz)-->
+<html>
+  
+  <!--Tag HEAD define a seção de cabeçalho do documento-->
+  <head>
+    
+    <!--Informa ao navegador a codificação de caracteres utilizada-->
+    <meta charset="UTF-8" />
+    
+    <!--Título do documento exibido na aba (ou guia) do navegador-->
+    <title>HTML - Exemplo1</title>
+
+    <!-- seção de estilos CSS-->
+    <style type="text/css">
+      /*Define estilo para as células (tagd td e th) da tabela identificada (id) tb1*/
+    	#tb1 td, #tb1 th { 
+         border:2px solid blue; /*Borda*/
+    		 color:yellow; /* cor letra */
+    		 background-color: green; /* cor fundo */
+    		 padding: 10px; /* espaço borda e valor */
+    		 font-family: arial, sans-serif; /*tipo dos caracteres (fonte)*/
+    		 font-size: 15px; /*tamanho dos caracteres*/
+    	}
+
+      /*Estilo da tabela cujo id="tb1*/
+    	#tb1 {border-collapse: collapse; 
+        /*Elemento seguinte a tabela ficará à direita da tabela, a qual ficará à esquerda (left)*/
+    		float:left; 
+        margin-right: 20px; /*margem direita (20 picels)*/
+    		width:40%; /*largura tabela (40% da largura da janela do navegador)*/
+    	}
+
+      /*Estilo das linhas pares (even) do corpo da tabela cujo id="tb2"*/
+    	#tb2 tbody tr:nth-child(even) {
+    		background-color: blue;
+    	}
+
+      /*Estilo das linhas ímpares (odd) do corpo da tabela cujo id="tb2"*/
+    	#tb2 tbody tr:nth-child(odd) {
+    		background-color: yellow;
+    	}
+
+      /*O seletor * seleciona todos os elementos do documento, ou seja, todos os elementos terão tamanho dos caracteres igual a 30 picels, desde que não sobreposto por uma definição de estilo mais específica.*/
+      * {font-size:30px;}
+
+      a {
+      	border: 1px solid blue;
+      	text-decoration: none;
+      	padding: 30px 5px;
+      	background-color: red;
+      	color:white;
+      	border-radius: 10px;
+      }
+
+      /*Estilo aplicado a todos os links do documento quando o mouse estiver sobre*/
+      a:hover {
+        /*Cor dos caracteres definada por meio do padrão RGB ( Red=vermelho;Green=verde;Blue=azul). FBB são dígitos hexadecinais que em notação decinal equivalem a 15 11 11*/
+        color: #FBB;
+
+        /*Sombra do link formatado como botão.*/
+      	box-shadow: 10px 5px #A44;
+      }
+
+    </style>
+
+  </head>
+
+  <!--Tag BODY define a seção do documento onde os elementos de apresentação e interação com o usuário são definidos. O atributo STYLE define o estilo visual CSS para o documento; no caso, apenas a cor de fundo.-->
+  <body style="background-color:#FDD"> 
+    
+    <!-- Títulos
+          tag     Descrição
+          h1      título de nível 1
+          h2      título de nível 2 
+          ...     ...   
+
+          O atributo STYLE define o estilo visual CSS do título de nível 1; no caso, apenas a cor das letras.
+    -->
+    <h1 style="color:blue">Esta é a primeira Página HTML.</h1>
+
+    <!--  tag   Descrição
+          hr	  traço de separação
+
+          Atributos
+          size    espessura do traço
+          noshade sem sombra
+
+          A tag HR não tem conteúdo. A notação utilizada no exemplo para tags sem conteúdo é preferida em relação a notação convencional, ou seja: <hr></hr>
+    -->
+    <hr size="8" noshade/>
+
+    <h2>Formatação de caracteres</h2>
+    <h3>Usando tags HTML</h3>
+    <!--  tag    Descrição
+          p      parágrafo
+          i      itálico
+          b      negrito
+          u      sublinhado
+          font   tamanho e cor da letra
+    -->
+
+    <!--Parágrafo-->
+    <p>
+      <i>Fatec</i> - <b><font size="30px" color="red">Centro</font></b><u><b>Paula</b></u>Souza - Praia Grande 
+    </p>
+
+    <h2>Formatação de caracteres</h2>
+    <h3>Usando CSS</h3>
+    <!--
+      Propriedades CSS (uso neste exemplo):
+        font-style: letras em itálido.
+        font-weight: negrito.
+        text-decoration: sublinhado.
+    -->
+    <p>
+      <span style="font-style: italic">Fatec</span> - 
+
+      <span style="font-weight: bold; font-family: arial,sans-serif; font-size: 2em; color: red">Centro</span>
+      <span style=" font-weight: bold; text-decoration: underline">Paula</span>Souza - Praia Grande 
+    </p>
+
+    <!--  tag   Descrição
+          ol	  lista ordenada (itens numerados)
+                Atributos:
+                  Start: valor inicial da numeração
+                  Type: tipo - números, letras (A),
+                        algarismos romanos (I). 
+          li  itens da lista
+    -->
+    <h2>Lista Ordenada</h2>
+    <ol start="27" type="A">
+      <li>Microsoft</li>
+      <li>Google</li>
+      <li>IBM</li>
+    </ol>
+
+    <!-- tag    Descrição
+         ul     lista não ordenada
+                atributo:
+                  type: símbolo utilizado
+                    - circle
+                    - square
+                    - disc
+         li     itens da lista
+    -->
+    <h2>Lista não Ordenada</h2>
+    <ul type="square">
+      <li>Microsoft</li>
+      <li>Google</li>
+      <li>IBM</li>
+    </ul>
+
+    <!--  tag    Descrição
+          dl     lista para definição de termos (Glossário)
+		      dt     nome do termo
+          dd     descrição do termo
+    -->	
+    <h2>Lista de Definição</h2>
+    <dl>
+  	  <dt>Byte</dt>
+  	  <dd>Oito bits consecutivos</dd>
+  	  <dt>Word</dt>
+  	  <dd>Aplicativo do pacote Office</dd>
+    </dl>
+	
+    <!--  tag    Descrição
+          table	  definição de tabela
+          thead   cabeçalho da tabela (título colunas)
+          tbody   linhas de dados
+          tfoot   rodapé da tabela
+          tr	    linha
+          th      célula cabeçalho de coluna
+          td      célula dado de coluna
+                  Atributos:
+                    colspan: mesclar (juntar) células
+                    rowspan: mesclar (juntar) células
+          style   Estilo CSS
+            Propriedade CSS:
+              border: borda (largura tipo cor)
+    -->
+    <h2>Tabela</h2>
+    <table id="tb1">
+      <caption>Materiais</caption>
+      <thead>
+        <tr> <th>código</th> <th>Descrição</th> </tr>
+      </thead>
+      <tbody> 
+        <tr> <td>1</td>      <td>prego</td>     </tr> 
+        <tr> <td>2</td>      <td>parafuso</td>  </tr>
+        <tr> <td>3</td>      <td>porca</td>     </tr>
+      </tbody>
+      <tfoot>
+        <tr> <td colspan="2" style="text-align:center">Fim</td></tr>
+      </tfoot>
+    </table>
+
+    <h2>Tabela</h2>
+    <table style="border: 1px solid #634" id="tb2">
+      <caption>Materiais</caption>
+      <thead>
+        <tr> <th>código</th> <th>Descrição</th> </tr>
+      </thead>
+      <tbody> 
+        <tr> <td>1</td>      <td>prego</td>     </tr> 
+        <tr> <td>2</td>      <td>parafuso</td>  </tr>
+        <tr> <td>3</td>      <td>porca</td>     </tr>
+      </tbody>
+      <tfoot>
+        <tr> <td colspan="2" style="text-align:center">Fim</td></tr>
+      </tfoot>
+    </table>
+
+    <!-- tag    Descrição
+	       img	carrega imagem
+		      Atributos:
+		        src: nome de arquivo
+            Title: texto apresentado quando mouse sobre
+            Alt: texto alternativo se imagem indisponível
+            style: estilo CSS
+              Propriedades CSS:
+                width: largura
+                height: altura
+    -->
+    <h2>Imagem</h2>
+    <img src="figura1.jpg" style="width:400px;height:200px" title="Figura Exemplo" alt="Figura" />
+
+    <!--  tag   Descrição
+          a     hiperlink - associa documentos/sites
+          Atributos:
+            href: endereço
+            target: destino onde documento referenciado no link será aberto
+    -->
+    <h2>Links</h2>
+	  <a href="http://www.w3schools.com/html/default.asp" target="_blank">HTML - Referências</a>    
+
+	 <br/>
+	 <br/>
+  </body>
+
+</html>

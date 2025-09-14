@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2 de JavaScript</title>
+</head>
+<body>
+    <script>
+        //a x2 + b x + c = 0
+        // obter od valores de a,b e c
+
+        var a,b,c
+        a = prompt("a")
+        b = prompt("b")
+        c = prompt("c")
+
+        //calcular o delta: b ao quadrado menos 4 x a x c
+        var delta = ((b**2) -4*a*c)
+        if(delta<0){
+            alert("Não há raiz")
+        }
+        else if(delta==0){
+            alert(-b/2*a)
+        }
+        else{
+            alert((-b+delta**0,5)/(2*a))
+            alert((-b-delta**0,5)/(2*a))        
+        }     
+        var y =5
+        document.write("O valor é ${y+1}")   
+    </script>    
+</body>
+</html>

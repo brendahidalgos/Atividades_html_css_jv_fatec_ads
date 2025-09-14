@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        document.write("Ola, Mundo!")/*comentário*/
+        document.write("<br>")
+        /*Área de circulo de diâmetro 5
+        Operadores matemáticos:
+        Multiplicação: *
+        Divisão: /
+        Potenciação: ** (procede * e /)
+        Oposto: -5 -(-3)
+        Resto: 7 % 3 resulta
+        */
+        document.write(3.14156 *(5/2)**2)
+        document.write("<br>")
+        document.write(Math.PI *(5/2)**2) /*Mostrar número pi e calcular*/
+        document.write("<br>")
+
+        var x = 3 - 4 * 3
+        document.write(x + 7)
+        document.write("<br>")
+
+        document.write(3 > 2)
+        document.write("<br>")
+        document.write(3 <= 2 )
+        document.write("<br>")
+        document.write(3 == 3)//igual
+        document.write("<br>")
+        document.write(3 != 3) //diferente
+        
+        //Operadores lógicos: Verdadeiro ou falso 
+        document.write(true || false)// || OU
+        document.write("<br>")
+        document.write(true && false) // && E
+        document.write("<br>")
+        document.write(!false)// ! NOT
+
+        /*Estrutura Condicional
+        Obter do usuário o preço alcool e da gasolina*/
+        var alcool, gasolina
+        alcool = prompt("Digite o preço do Alcool: ")
+        gasolina = prompt("Digite o preço da Gasolina: ")
+        //verificar qual combustivel é melhor
+        //rendimento do alcool é 70% da gasolina
+        var resultado = alcool/gasolina
+        if(resultado <=0.7) //numero decimais usa-se ponto
+        {
+            alert("Alcool é melhor")
+        }
+        else{
+            alert("Gasolina é melhor")
+        }
+        /*
+            Exercicio
+            1)
+        */
+    </script>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <hr>
+    <section>
+        <h2>MUDANDO O TAMANHO DO TEXTO</h2>
+        <p id="paragrafo">JavaScript can change the style of an HTML element.</p>
+        <button type="button" onclick="document.getElementById('paragrafo').style.fontSize='35px'">Click Me!</button>
+    </section>
+    <hr>  
+    <section>
+        <h2>OCULTAR E MOSTRAR</h2>
+        <p id="brenda">Brenda Hidalgo</p>
+        <button type="button" onclick="document.getElementById('brenda').style.display='none'">ocultar</button>
+        <button type="button" onclick="document.getElementById('brenda').style.display='block'">mostrar</button>
+        <!--O atributo onclick é um evento JavaScript que executa uma ação quando o botão é clicado. A ação é a seguinte:
+        document.getElementById('brenda'): Este comando localiza um elemento HTML na página que tem o id (identificador) "brenda".        
+        .style.display='none': Esta parte modifica o estilo do elemento encontrado. Ao definir a propriedade display como 'none', o elemento se torna invisível, como se ele não estivesse mais na página.-->
+    </section>  
+    <hr>
+</body>
+</html>

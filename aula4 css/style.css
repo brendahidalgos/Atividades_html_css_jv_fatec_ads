@@ -1,0 +1,39 @@
+p{
+    color: rgb(0, 0, 0); /*cor*/
+    text-decoration: underline;/*sublinhado*/
+    font-family: 'Courier New', Courier, monospace;/*fonte*/
+    font-size: 1em; /*tamanho*/
+    background-color: bisque; /*cor fundo*/
+    width: 100px; /*largura*/
+    height: auto;/*altura*/
+}
+/*comentários*/
+#p4{
+    color: blue;
+    background-color: yellow;
+    font-style: italic;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px black;
+}
+#p4:hover{
+    background-color: aqua;
+}
+div{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 2px 10px black;
+
+}
+div:hover{
+    rotate: 10deg;
+    transition: 2s;
+}
+#tabela{
+    border: 1px solid black;
+    border-collapse: collapse; /*uma linha só de borda*/
+    margin: auto; /*margem centralizada*/
+}
+#tabela th{
+    border: 1px solid black; /*borda*/
+    padding: 10px; /*espaçamento interno*/
+}

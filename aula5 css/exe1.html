@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .h1fatec{
+            color: rgb(21, 151, 27);
+            font-style: italic;
+        }
+        h1{
+            color: blue;
+        }
+        h3{
+            background-color: yellow;
+            border: 3px solid red;
+        }
+        li{
+            text-decoration: underline;
+            margin-left: 30px;
+        }
+        .listavermelha{
+            color: red;
+        }
+        img{
+            width: 800px;
+            height: 600px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+        }
+        .tabelamodelo1{
+            border: 4px solid blue;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 15px;         
+        }
+        caption{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .tabelamodelo1 th{
+            border: 4px solid rgb(183, 41, 9);
+            padding: 10px;
+        }
+        .tabelamodelo1 td{
+            border: 4px solid rgb(40, 163, 73);
+            padding: 10px;
+        }
+        .tabelamodelo1 thead tr{
+            background-color: yellow;
+        }
+        .tabelamodelo1 tfoot tr{
+            background-color: green;
+        }
+        .tabelamodelo1 tbody tr:nth-child(odd){ /*linhas impares*/
+            background-color: aqua;
+        }
+        .tabelamodelo1 tbody tr:nth-child(even){ /*linhas pares*/
+            background-color: rgb(174, 42, 152);
+        }
+        .n:hover{ /*linhas impares*/
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }      
+        .formodelo1{
+            border: 1px, solid black;
+            margin-top: 20px;
+            width: 50vw;
+            display: block;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 10px 10px  green;
+            margin-bottom: 200px;
+        }
+        input{
+            margin-bottom: 10px;
+            border: 1px solid green;
+        }
+        input:focus{
+            border-color: rgb(219, 223, 4);
+        }
+        .botao{
+            width: 100px;
+            height: 20px;
+            background-color: rgb(20, 195, 55);
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .botao:hover{
+            background-color: rgba(17, 205, 55, 0.669);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1fatec">Fatec</h1>
+    <h2>Praia Grande</h2>    
+    <h1>Outro titulo 1</h1>
+    <h3>Titulo 3</h3>
+    <!--lista ordenada de nomes-->
+    <ol>
+        <li>João</li>
+        <li>Maria</li>
+        <li>Jose</li>
+        <li>Luciana</li>
+        <li>Carlos</li>
+    </ol>
+    <ol class="listavermelha">
+        <li>João</li>
+        <li>Maria</li>
+        <li>Jose</li>
+        <li>Luciana</li>
+        <li>Carlos</li>
+    </ol>
+    <ul>
+        <li>João</li>
+        <li>Maria</li>
+        <li>Jose</li>
+        <li>Luciana</li>
+        <li>Carlos</li>
+    </ul>
+    <!--inserir imagens-->
+    <img src="https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGxhbm8lMjBkZSUyMGZ1bmRvJTIwcGFpc2FnZW18ZW58MHx8MHx8fDA%3D" alt="imagem de paisagem">
+
+    <table class="tabelamodelo1">
+        <caption>Produtos</caption>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="n">10</td>
+                <td>prego</td>
+            </tr>
+            <tr>
+                <td class="n">20</td>
+                <td>parafuso</td>
+            </tr>
+            <tr>
+                <td class="n">30</td>
+                <td>porca</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">FIM</th>
+            </tr>
+        </tfoot>
+    </table>
+    <form action="wwww.goole.copm.br" method="post" class="formodelo1">
+        <div>
+            <label for="c1">Código</label>
+            <input type="number" name="" id="c1" required min="1">
+        </div>
+        <div>
+            <label for="c2">Descrição</label>
+            <input type="text" name="" id="c2" required maxlength="50" pattern="[A-Z]{2}[A-Z ]{0,}">
+        </div>
+        <div>
+            <input type="submit" value="Enviar" class="botao">
+        </div>
+    </form>
+</body>
+</html>
