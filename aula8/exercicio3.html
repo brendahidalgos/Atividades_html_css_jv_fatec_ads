@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Com ID</h1>
+    <button id="azul">Azul</button>
+    <button id="vermelho">Vermelho</button>
+    <button id="verde">Verde</button>
+    <hr>
+    <h1>Com Onclick e Condição</h1>
+    <button onclick="azulacao()">Azul</button>
+    <button onclick="vermelhoacao()">Vermelho</button>
+    <button onclick="verdeacao()">Verde</button>
+    <hr>
+    <h1>Com Function Event</h1>
+    <button>blue</button>
+    <button>red</button>
+    <button>green</button>
+</body>
+</html>
+<script>
+    azul.onclick = function(){      
+        alert("Mudar para azul?") 
+        document.body.style.backgroundColor = "#87CEFA"
+    }    
+    vermelho.onclick = function(){
+        alert("Mudar para vermelho?")
+        document.body.style.backgroundColor = "#8B0000"
+    }  
+    verde.onclick = function(){
+        alert("Mudar para verde?")
+        document.body.style.backgroundColor = "#32CD32"
+    }  
+
+    //fazer alert com 2 opções
+    function azulacao() {
+    const confirmacao = confirm("Você tem certeza que deseja colocar em azul?");
+    if (confirmacao) {        
+        document.body.style.backgroundColor = "#87CEFA"       
+    } else {
+        alert("Operação cancelada!");
+    }
+    }
+    function vermelhoacao() {
+    const confirmacao = confirm("Você tem certeza que deseja colocar em vermelho?");
+    if (confirmacao) {        
+        document.body.style.backgroundColor = "#8B0000"    
+    } else {
+        alert("Operação cancelada!");
+    }
+    }
+    function verdeacao() {
+    const confirmacao = confirm("Você tem certeza que deseja colocar em verde?");
+    if (confirmacao) {        
+        document.body.style.backgroundColor = "#32CD32"    
+    } else {
+        alert("Operação cancelada!");
+    }
+    }
+
+    //saber qual cor pelo texto do botão
+    document.body.onclick = function(event){
+        document.body.style.backgroundColor = event.target.textContent
+    }
+</script>

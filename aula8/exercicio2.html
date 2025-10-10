@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="f1">
+        A: <input type="number" name="" id="ip1" requerid min="0">
+        B: <input type="number" name="" id="ip2" requerid min="0">
+        <input type="submit" value="Enviar">       
+    </form> 
+    <h3 id="saida"></h3>
+</body>
+</html>
+<script>
+    f1.onsubmit = function(event){ //event refere-se ao evento
+        event.preventDefault(); //cancela o evento
+        var num1 = ip1.value
+        var num2 = ip2.value
+        saida.textContent = Number(num1) + Number(num2)
+    }
+</script>
