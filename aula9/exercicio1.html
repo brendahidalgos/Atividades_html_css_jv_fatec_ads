@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #principal{
+            border: 3px solid blue;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;           
+            align-items: center;
+        }
+        #principal div{
+            width: 300px; 
+            height: 100px; 
+            border: 1px solid black;
+        }
+        @media screen and (max-width: 800px){
+            #principal{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>      
+    </div>
+</body>
+</html>
