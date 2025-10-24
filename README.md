@@ -18,4 +18,4 @@ Cada pasta representa um projeto ou uma série de exercícios focados em um tóp
 - Abra o arquivo index.html diretamente no seu navegador ou inicie um servidor web local (como o Live Server do VS Code) para ter uma visualização completa.
 
 ## ✍️ Autor
-@brendahidalgos - Aluno do curso de Análise e Desenvolvimento de Sistemas.
+@brendahidalgos - Aluna do curso de Análise e Desenvolvimento de Sistemas.
