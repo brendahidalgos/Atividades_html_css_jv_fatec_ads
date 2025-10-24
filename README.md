@@ -17,5 +17,5 @@ Cada pasta representa um projeto ou uma série de exercícios focados em um tóp
 - cd Atividades_Front-end_FATEC/nome-da-pasta
 - Abra o arquivo index.html diretamente no seu navegador ou inicie um servidor web local (como o Live Server do VS Code) para ter uma visualização completa.
 
-✍️ Autor
+## ✍️ Autor
 @brendahidalgos - Aluno do curso de Análise e Desenvolvimento de Sistemas.
